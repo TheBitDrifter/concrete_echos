@@ -1,0 +1,54 @@
+{
+  "active": "slash",
+  "globalOffset": {
+    "x": -150,
+    "y": -100
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "rowIndex": 0,
+      "frameCount": 6,
+      "frameWidth": 300,
+      "frameHeight": 200,
+      "speed": 5,
+      "freeze": false
+    },
+    {
+      "name": "hurt",
+      "rowIndex": 2,
+      "frameCount": 3,
+      "frameWidth": 300,
+      "frameHeight": 200,
+      "speed": 5,
+      "freeze": true
+    },
+    {
+      "name": "slash",
+      "rowIndex": 4,
+      "frameCount": 8,
+      "frameWidth": 300,
+      "frameHeight": 200,
+      "speed": 5,
+      "freeze": false,
+      "freezeFrame": 0
+    },
+    {
+      "name": "defeat",
+      "rowIndex": 3,
+      "frameCount": 6,
+      "frameWidth": 300,
+      "frameHeight": 200,
+      "speed": 5,
+      "freeze": true
+    },
+    {
+      "name": "run",
+      "rowIndex": 5,
+      "frameCount": 4,
+      "frameWidth": 300,
+      "frameHeight": 200,
+      "speed": 8
+    }
+  ]
+}

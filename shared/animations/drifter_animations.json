@@ -1,0 +1,37 @@
+{
+  "active": "",
+  "globalOffset": {
+    "x": -32,
+    "y": -40
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "rowIndex": 1,
+      "frameCount": 4,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "speed": 8,
+      "freeze": false
+    },
+    {
+      "name": "startShmokey",
+      "rowIndex": 2,
+      "frameCount": 8,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "speed": 7,
+      "freeze": true
+    },
+    {
+      "name": "isShmoker",
+      "rowIndex": 3,
+      "frameCount": 17,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "speed": 7,
+      "freeze": false,
+      "freezeFrame": 0
+    }
+  ]
+}

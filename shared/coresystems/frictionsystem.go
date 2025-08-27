@@ -1,0 +1,41 @@
+package coresystems
+
+import (
+	"github.com/TheBitDrifter/bappa/blueprint"
+	"github.com/TheBitDrifter/bappa/tteokbokki/motion"
+	"github.com/TheBitDrifter/bappa/warehouse"
+	"github.com/TheBitDrifter/concrete_echos/shared/components"
+)
+
+const (
+	DEFAULT_FRICTION = 0.5
+	DEFAULT_DAMP     = 0.9
+)
+
+type FrictionSystem struct{}
+
+func (FrictionSystem) Run(scene blueprint.Scene, dt float64) error {
+	query := warehouse.Factory.NewQuery().And(
+		motion.Components.Dynamics,
+		warehouse.Factory.NewQuery().Or(
+			warehouse.Factory.NewQuery().And(
+				components.PlayerTag,
+			),
+			components.MobTag),
+
+		warehouse.Factory.NewQuery().Not(components.IgnoreDefaultFrictionDampTag),
+	)
+	cursor := scene.NewCursor(query)
+
+	for range cursor.Next() {
+
+		dyn := motion.Components.Dynamics.GetFromCursor(cursor)
+
+		friction := motion.Forces.Generator.NewHorizontalFrictionForce(dyn.Vel, DEFAULT_FRICTION)
+
+		motion.Forces.AddForce(dyn, friction)
+
+		motion.Forces.Generator.ApplyHorizontalDamping(dyn, DEFAULT_DAMP)
+	}
+	return nil
+}

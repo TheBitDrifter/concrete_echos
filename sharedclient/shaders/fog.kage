@@ -1,0 +1,39 @@
+//kage:unit pixels
+package main
+
+// PlayerPos is the player's center, in pixels.
+var PlayerPos vec2
+// Time is a simple float that increases each frame, used for animation.
+var Time float
+
+// A simple hash function to generate pseudo-random noise.
+func random(st vec2) float {
+	return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123)
+}
+
+func sdfRoundedBox(p, b, r vec2) float {
+	q := abs(p) - b + r
+	return length(max(q, 0.0)) - r.x
+}
+
+func Fragment(targetCoords vec4, _ vec2, _ vec4) vec4 {
+	// Get the original color of the game pixel.
+	gameColor := imageSrc0At(targetCoords.xy)
+
+	fogColor := vec4(0.1, 0.2, 0.15, 1.0)
+
+	noiseCoord := targetCoords.xy + vec2(Time * 5.0, Time * 5.0)
+	noise := random(noiseCoord) * 0.06 // Kept low to not be an eyesore.
+	fogColor.rgb += noise;
+
+	boxSize := vec2(180.0, 60.0)
+	cornerRadius := vec2(5.0)
+	
+	feather := 170.0
+
+	playerDist := sdfRoundedBox(targetCoords.xy - PlayerPos, boxSize, cornerRadius)
+	
+	visibility := smoothstep(feather, 0.0, playerDist)
+
+	return mix(fogColor, gameColor, visibility)
+}

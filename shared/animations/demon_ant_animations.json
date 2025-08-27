@@ -1,0 +1,67 @@
+{
+  "active": "jab",
+  "globalOffset": {
+    "x": -200,
+    "y": -98
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "rowIndex": 4,
+      "frameCount": 6,
+      "frameWidth": 400,
+      "frameHeight": 200,
+      "speed": 8
+    },
+    {
+      "name": "jab",
+      "rowIndex": 1,
+      "frameCount": 15,
+      "frameWidth": 400,
+      "frameHeight": 200,
+      "speed": 5,
+      "freezeFrame": 9
+    },
+    {
+      "name": "hurt",
+      "rowIndex": 6,
+      "frameCount": 1,
+      "frameWidth": 400,
+      "frameHeight": 200,
+      "speed": 8
+    },
+    {
+      "name": "dodge",
+      "rowIndex": 6,
+      "frameCount": 2,
+      "frameWidth": 400,
+      "frameHeight": 200,
+      "speed": 5
+    },
+    {
+      "name": "defeat",
+      "rowIndex": 7,
+      "frameCount": 4,
+      "frameWidth": 400,
+      "frameHeight": 200,
+      "speed": 5,
+      "freeze": true
+    },
+    {
+      "name": "slash",
+      "rowIndex": 2,
+      "frameCount": 14,
+      "frameWidth": 400,
+      "frameHeight": 200,
+      "speed": 4
+    },
+    {
+      "name": "run",
+      "rowIndex": 8,
+      "frameCount": 6,
+      "frameWidth": 400,
+      "frameHeight": 200,
+      "speed": 5
+    }
+  ]
+}

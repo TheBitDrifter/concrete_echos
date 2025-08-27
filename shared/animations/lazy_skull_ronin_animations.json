@@ -1,0 +1,102 @@
+{
+  "active": "tertcombo",
+  "globalOffset": {
+    "x": -300,
+    "y": -275
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "rowIndex": 0,
+      "frameCount": 1,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 5,
+      "freeze": false,
+      "offset": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "name": "primarycombo",
+      "rowIndex": 3,
+      "frameCount": 20,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 6,
+      "freeze": false,
+      "freezeFrame": 0
+    },
+    {
+      "name": "secondarycombo",
+      "rowIndex": 4,
+      "frameCount": 24,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 6,
+      "freeze": false,
+      "freezeFrame": 0
+    },
+    {
+      "name": "tertcombo",
+      "rowIndex": 5,
+      "frameCount": 21,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 6,
+      "freeze": false,
+      "freezeFrame": 0
+    },
+    {
+      "name": "idlecombat",
+      "rowIndex": 2,
+      "frameCount": 3,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 8,
+      "freeze": false,
+      "freezeFrame": 0
+    },
+    {
+      "name": "run",
+      "rowIndex": 6,
+      "frameCount": 4,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 8,
+      "freeze": false,
+      "freezeFrame": 0
+    },
+    {
+      "name": "hurt",
+      "rowIndex": 7,
+      "frameCount": 4,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 5,
+      "freeze": false,
+      "freezeFrame": 0
+    },
+    {
+      "name": "defeat",
+      "rowIndex": 8,
+      "frameCount": 8,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 6,
+      "freeze": true,
+      "freezeFrame": 0
+    },
+    {
+      "name": "arise",
+      "rowIndex": 1,
+      "frameCount": 4,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "speed": 20,
+      "freeze": true,
+      "freezeFrame": 0
+    }
+  ]
+}

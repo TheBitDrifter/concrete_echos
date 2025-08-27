@@ -1,0 +1,36 @@
+{
+  "active": "idle",
+  "globalOffset": {
+    "x": -31,
+    "y": -34
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "rowIndex": 1,
+      "frameCount": 8,
+      "frameWidth": 62,
+      "frameHeight": 64,
+      "speed": 5,
+      "freeze": false
+    },
+    {
+      "name": "hurt",
+      "rowIndex": 0,
+      "frameCount": 4,
+      "frameWidth": 62,
+      "frameHeight": 64,
+      "speed": 5,
+      "freeze": false
+    },
+    {
+      "name": "defeat",
+      "rowIndex": 2,
+      "frameCount": 8,
+      "frameWidth": 62,
+      "frameHeight": 64,
+      "speed": 5,
+      "freeze": true
+    }
+  ]
+}

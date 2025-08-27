@@ -1,0 +1,11 @@
+.DS_Store
+
+standalone/ce_save.json
+
+# Ignore the assets folder and everything in it...
+sharedclient/assets/
+
+# ...but DO NOT ignore assets.go
+!sharedclient/assets/assets.go
+
+

@@ -1,0 +1,43 @@
+{
+  "active": "smash",
+  "globalOffset": {
+    "x": -64,
+    "y": 0
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "rowIndex": 0,
+      "frameCount": 4,
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "speed": 5
+    },
+    {
+      "name": "throw",
+      "rowIndex": 1,
+      "frameCount": 13,
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "speed": 5
+    },
+    {
+      "name": "defeat",
+      "rowIndex": 2,
+      "frameCount": 1,
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "speed": 5,
+      "freezeFrame": 0
+    },
+    {
+      "name": "hurt",
+      "rowIndex": 2,
+      "frameCount": 1,
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "speed": 5,
+      "freezeFrame": 0
+    }
+  ]
+}

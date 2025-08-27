@@ -1,0 +1,27 @@
+{
+  "active": "aerial",
+  "attacks": [
+    {
+      "name": "uppercut",
+      "speed": 5,
+      "freezeFrame": 0,
+      "length": 6,
+      "damage": 10,
+      "boxes": [
+        [],
+        [],
+        [],
+        [
+          {
+            "x": 15,
+            "y": -70,
+            "w": 25,
+            "h": 40
+          }
+        ],
+        [],
+        []
+      ]
+    }
+  ]
+}
