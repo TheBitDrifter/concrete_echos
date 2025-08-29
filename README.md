@@ -12,7 +12,7 @@ Concrete Echos is a free prototype for a 2D action-platformer concept I've been 
 
 You play as "Box Head," a character navigating a strange somewhat modern world. The game features platforming, combat, and a unique "swap" mechanic instead of a traditional parry.
 
-As a young project, it's still rough around the edges, but my main goal was to create a specific mood and to test if the core ideas
+As a young project, it's still rough around the edges, but my main goal was to create a specific mood and to test if the core ideas were fun. I'd be grateful for any feedback.
 
 ## About The Project
 
