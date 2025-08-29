@@ -3,6 +3,9 @@
 ![ceprotogif](https://github.com/user-attachments/assets/1016de2e-9f92-4f69-b5e4-d996a419db94)
 <img width="" height="225" alt="Screenshot 2025-08-27 at 11 41 23 AM" src="https://github.com/user-attachments/assets/ed46659e-5260-45c8-851a-819e6c729e5a" />
 
+- [Itch](https://thebitdrifter.itch.io/concrete-echos)
+- [Bappa](https://bappa.net/examples/templates/concrete_echoes-prototype/)
+
 ## About The Game
 
 Concrete Echos is a free prototype for a 2D action-platformer concept I've been developing. It's an early, personal hobby kind of project.
